@@ -1,6 +1,7 @@
 /// <reference types="@workadventure/iframe-api-typings" />
 
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
+import lib from "./lib";
 
 console.log('Script started successfully');
 
@@ -12,9 +13,9 @@ WA.onInit().then(() => {
     console.log('Player tags: ',WA.player.tags)
 
     WA.room.onEnterLayer('clockZone').subscribe(() => {
-        const today = new Date();
-        const time = today.getHours() + ":" + today.getMinutes();
-        currentPopup = WA.ui.openPopup("clockPopup","It's " + time,[]);
+        const time = lib.getCurrentTime();
+        currentPopup = WA.ui.openPopup("clockPopup","Es ist aktuell: " + time,[]);
+        lib.openWebsiteInNewTab("https://cfx.re");
     })
 
     WA.room.onLeaveLayer('clockZone').subscribe(closePopUp)
