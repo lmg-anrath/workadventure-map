@@ -1,3 +1,22 @@
+class popup {
+    current: any;
+    buttons: any;
+    constructor(type: string, text: string, buttons: any) {
+        this.buttons = buttons;
+        if (this.buttons === undefined || this.buttons === null) {
+            this.buttons = [];
+        }        
+        this.current = WA.ui.openPopup(type, text, this.buttons);
+    }
+
+    close() {
+        if (this.current !== undefined) {
+            this.current.close();
+            this.current = undefined;
+        }
+    }
+}
+
 let lib = {
     getCurrentTime:function() {
         const today = new Date();
@@ -27,7 +46,11 @@ let lib = {
             return;
         }
         WA.nav.goToRoom(envPath);
-    }
+    },
+
+    createNewPopup:function(type: string, text: string, buttons: any) {
+        return new popup(type, text, buttons);
+    },
 }
 
 export default lib;
