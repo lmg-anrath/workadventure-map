@@ -5,20 +5,21 @@ import lib from "./lib";
 
 console.log('Script started successfully');
 
-let currentPopup: any = undefined;
+let pop: any = null;
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
     console.log('Scripting API ready');
-    console.log('Player tags: ',WA.player.tags)
+    console.log('Player tags: ', WA.player.tags)
 
     WA.room.onEnterLayer('clockZone').subscribe(() => {
         const time = lib.getCurrentTime();
-        currentPopup = WA.ui.openPopup("clockPopup","Es ist aktuell: " + time,[]);
-        lib.openWebsiteInNewTab("https://cfx.re");
+        pop = lib.createNewPopup("clockPopup", "Es ist aktuell: " + time, null);
     })
 
-    WA.room.onLeaveLayer('clockZone').subscribe(closePopUp)
+    WA.room.onLeaveLayer('clockZone').subscribe(() => {
+        pop.close();
+    })
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
@@ -27,11 +28,5 @@ WA.onInit().then(() => {
 
 }).catch(e => console.error(e));
 
-function closePopUp(){
-    if (currentPopup !== undefined) {
-        currentPopup.close();
-        currentPopup = undefined;
-    }
-}
 
 export {};
