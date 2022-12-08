@@ -15,6 +15,7 @@ WA.onInit().then(() => {
     WA.room.onEnterLayer('clockZone').subscribe(() => {
         const time = lib.getCurrentTime();
         pop = lib.createNewPopup("clockPopup", "Es ist aktuell: " + time, null);
+        // WA.nav.goToRoom("./map_test.json") // Change Map
     })
 
     WA.room.onLeaveLayer('clockZone').subscribe(() => {
