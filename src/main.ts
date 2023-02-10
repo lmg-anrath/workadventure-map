@@ -1,24 +1,29 @@
 /// <reference types="@workadventure/iframe-api-typings" />
 
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
+import lib from "./lib";
+import config from "./config";
 
 console.log('Script started successfully');
 
-let currentPopup: any = undefined;
+let pop: any = null;
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
-    WA.nav.goToRoom("../maps/map_test.json");
+    // WA.nav.goToRoom(config.test_map) // Change Map
     console.log('Scripting API ready');
-    console.log('Player tags: ',WA.player.tags)
+    console.log('Player tags: ', WA.player.tags)
 
-    WA.room.area.onEnter('clock').subscribe(() => {
-        const today = new Date();
-        const time = today.getHours() + ":" + today.getMinutes();
-        currentPopup = WA.ui.openPopup("clockPopup", "It's " + time, []);
+    let myDialog:any = <any>document.getElementById("myDialog");
+    myDialog.showModal();
+    WA.room.onEnterLayer('clockZone').subscribe(() => {
+        const time = lib.getCurrentTime();
+        pop = lib.createNewPopup("clockPopup", "Es ist aktuell: " + time, null);
     })
 
-    WA.room.area.onLeave('clock').subscribe(closePopup)
+    WA.room.onLeaveLayer('clockZone').subscribe(() => {
+        pop.close();
+    })
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
@@ -27,11 +32,5 @@ WA.onInit().then(() => {
 
 }).catch(e => console.error(e));
 
-function closePopup(){
-    if (currentPopup !== undefined) {
-        currentPopup.close();
-        currentPopup = undefined;
-    }
-}
 
 export {};
