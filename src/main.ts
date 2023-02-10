@@ -1,8 +1,8 @@
 /// <reference types="@workadventure/iframe-api-typings" />
 
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
-import lib from "./lib";
-import config from "./config";
+//import lib from "./lib";
+//import config from "./config";
 
 console.log('Script started successfully');
 
