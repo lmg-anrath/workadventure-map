@@ -10,12 +10,10 @@ let pop: any = null;
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
-    // WA.nav.goToRoom(config.test_map) // Change Map
+    WA.nav.goToRoom(config.test_map) // Change Map
     console.log('Scripting API ready');
     console.log('Player tags: ', WA.player.tags)
 
-    let myDialog:any = <any>document.getElementById("myDialog");
-    myDialog.showModal();
     WA.room.onEnterLayer('clockZone').subscribe(() => {
         const time = lib.getCurrentTime();
         pop = lib.createNewPopup("clockPopup", "Es ist aktuell: " + time, null);
