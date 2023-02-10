@@ -349,6 +349,34 @@
          "y":0
         }, 
         {
+         "draworder":"topdown",
+         "id":51,
+         "name":"website",
+         "objects":[
+                {
+                 "class":"area",
+                 "height":64,
+                 "id":20,
+                 "name":"rick",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/lmg-anrath.de\/aktuelle_plaene\/Vertretungsplan\/heute\/subst_001.htm"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":64,
+                 "x":512,
+                 "y":384
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
          "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -412,8 +440,8 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":51,
- "nextobjectid":18,
+ "nextlayerid":52,
+ "nextobjectid":21,
  "orientation":"orthogonal",
  "properties":[
         {
@@ -439,7 +467,7 @@
         {
          "name":"script",
          "type":"string",
-         "value":"\/src\/main.js"
+         "value":"\/src\/main.ts"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.9.2",
