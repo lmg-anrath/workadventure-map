@@ -7,7 +7,7 @@ import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 console.log('Script started successfully');
 
 WA.onInit().then(() => {
-    WA.chat.sendChatMessage(WA.room.id, 'Bot');
+    WA.chat.sendChatMessage('Willkommen!', 'Bot');
     WA.chat.onChatMessage(message => {
         if(message == "fortnite") {
             WA.nav.goToRoom('../maps/map_test.tmj');
