@@ -11,6 +11,7 @@ WA.onInit().then(() => {
     WA.chat.sendChatMessage('Willkommen!', 'Bot');
     WA.chat.onChatMessage(message => {
         // Ich habe hier Versucht ein Filter einzubauen es wurde aber noch nicht getestet. 
+        // Ich weiß um ehrlich zu sein auch nicht ob Workadventure schon was integriertes hat. 
         const data = fs.readFileSync('./data/badwords.json', 'utf8');
         const obj = JSON.parse(data);
         let words = obj.deutsch;
