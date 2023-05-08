@@ -362,7 +362,7 @@
                         {
                          "name":"openWebsite",
                          "type":"string",
-                         "value":"https:\/\/lmg-anrath.de\/aktuelle_plaene\/Vertretungsplan\/heute\/subst_001.htm"
+                         "value":"\/src\/html\/vertretungsplan.html"
                         }],
                  "rotation":0,
                  "visible":true,

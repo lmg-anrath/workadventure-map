@@ -20,9 +20,13 @@
             }
             const instanceId = Math.random().toString(36).substring(2, 15);
             const url = `https://play.workadventure-lmg.de/_/${instanceId}/${host}${path}maps/map.tmj`;
+            const backup = `https://play.workadventu.re/_/${instanceId}/${host}${path}maps/map.tmj`;
             document.getElementById('testMapURL').href = url;
+            document.getElementById('backupURL').href = backup;
             document.getElementById('testMapBtnURL').href = url;
+            document.getElementById('backupBtnURL').href = backup;
             document.getElementById('testMapURL').innerText = url;
+            document.getElementById('backupURL').innerHTML = backup;
 
             const tmjURL = window.location.protocol + '//' + window.location.host + path + 'maps/map.tmj';
             document.getElementById('tmjURL').innerText = tmjURL;
@@ -181,7 +185,7 @@
     <header>
         <div class="logo">
             <a href="https://workadventu.re/" target="_blank" title="Workadventure"><img
-                    src="https://workadventu.re/images/general/logo.svg" alt="WorkAdventure logo" /></a>
+                    src="src/html/img/workadventure.png" alt="WorkAdventure logo" /></a>
         </div>
     </header>
     <main>
@@ -220,8 +224,9 @@
 
         <div class="nes-container with-title is-centered" style="margin-top: 1rem">
             <p class="title">Test this map</p>
-            <p>You can test this map at <a id="testMapURL" href="" class="url"></a></p>
-            <p><a id="testMapBtnURL" href="" class="nes-btn is-primary">Test this map</a></p>
+            <p>You can test this map at<br></brY><a id="testMapURL" href="" class="url"></a></p>
+            <p>or (as a backup)<br></brY><a id="backupURL" href="" class="url"></a></p>
+            <p><a id="testMapBtnURL" href="" class="nes-btn is-primary">Test this map</a> <a id="backupBtnURL" href="" class="nes-btn is-primary">Test this map (backup)</a></p>
         </div>
 
         <div class="nes-container with-title is-centered" style="margin-top: 1rem">
@@ -232,7 +237,7 @@
             <p><span id="tmjURL" class="url"></span></p>
         </div>
     </main>
-    <footer><a href="https://workadventu.re/" target="_blank" title="workadventu.re">&copy; WorkAdventure</a></footer>
+    <footer><a href="https://workadventu.re/" target="_blank" title="workadventu.re">&copy; WorkAdventure</a> // <a href="https://github.com/lmg-anrath/" target="_blank" title="lmg-anrath on github">&copy; lmg-anrath</a></footer>
 </body>
 
 </html>
