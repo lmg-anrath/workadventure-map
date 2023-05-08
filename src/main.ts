@@ -1,7 +1,7 @@
 /// <reference types="@workadventure/iframe-api-typings" />
 
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
-import * as fs from "fs";
+//import * as fs from "fs";
 //import lib from "./lib";
 //import config from "./config";
 
