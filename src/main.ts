@@ -5,7 +5,7 @@ console.log('Script started successfully');
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
-    WA.nav.goToRoom('../maps/Erdgeschoss.tmj');
+    WA.nav.goToRoom('../Erdgeschoss.tmj');
 }).catch(e => console.error(e));
 
 export {};
