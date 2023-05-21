@@ -12,7 +12,7 @@ console.log('Script started successfully');
 // @ts-ignore
 WA.onInit().then(() => {
     // @ts-ignore
-    WA.nav.goToRoom('../maps/conference.tmj');
+    // WA.nav.goToRoom('../maps/conference.tmj');
 
     // Create a new website object
 
