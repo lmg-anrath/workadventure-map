@@ -260,7 +260,7 @@
         {
          "columns":25,
          "firstgid":2956,
-         "image":"..\/tilesets\/WA_Room_Builder.png",
+         "image":".\/tilesets\/WA_Room_Builder.png",
          "imageheight":1280,
          "imagewidth":800,
          "margin":0,
