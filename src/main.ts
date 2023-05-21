@@ -1,5 +1,7 @@
+// @ts-ignore
 /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
 
+// @ts-ignore
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 console.log('Script started successfully');
@@ -7,7 +9,9 @@ console.log('Script started successfully');
 // let currentPopup: any = undefined;
 
 // Waiting for the API to be ready
+// @ts-ignore
 WA.onInit().then(() => {
+    // @ts-ignore
     WA.nav.goToRoom('../maps/conference.tmj');
 
     // Create a new website object
@@ -26,8 +30,9 @@ WA.onInit().then(() => {
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
         console.log('Scripting API Extra ready');
+    // @ts-ignore
     }).catch(e => console.error(e));
-
+// @ts-ignore
 }).catch(e => console.error(e));
 
 // function closePopup(){
@@ -37,4 +42,5 @@ WA.onInit().then(() => {
 //     }
 // }
 
-export {};
+export { };
+
