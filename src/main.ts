@@ -12,7 +12,7 @@ console.log('Script started successfully');
 // @ts-ignore
 WA.onInit().then(() => {
     // @ts-ignore
-    WA.nav.goToRoom('maps.workadventure-lmg.de/test.tmj');
+    WA.nav.goToRoom('/_/global/maps.workadventure-lmg.de/test.tmj');
 
     // Create a new website object
 
