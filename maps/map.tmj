@@ -467,7 +467,7 @@
         {
          "columns":10,
          "firstgid":1,
-         "image":"tilesets\/WA_Miscellaneous.png",
+         "image":"..\/tilesets\/WA_Miscellaneous.png",
          "imageheight":352,
          "imagewidth":320,
          "margin":0,
@@ -480,7 +480,7 @@
         {
          "columns":6,
          "firstgid":111,
-         "image":"tilesets\/WA_Special_Zones.png",
+         "image":"..\/tilesets\/WA_Special_Zones.png",
          "imageheight":64,
          "imagewidth":192,
          "margin":0,
@@ -493,7 +493,7 @@
         {
          "columns":6,
          "firstgid":123,
-         "image":"tilesets\/WA_Boden_IF1_Neu.png",
+         "image":"..\/tilesets\/WA_Boden_IF1_Neu.png",
          "imageheight":192,
          "imagewidth":192,
          "margin":0,
@@ -506,7 +506,7 @@
         {
          "columns":12,
          "firstgid":159,
-         "image":"tilesets\/WA_Room_Builder_Extension.png",
+         "image":"..\/tilesets\/WA_Room_Builder_Extension.png",
          "imageheight":384,
          "imagewidth":384,
          "margin":0,
@@ -519,7 +519,7 @@
         {
          "columns":25,
          "firstgid":303,
-         "image":"tilesets\/WA_Room_Builder.png",
+         "image":"..\/tilesets\/WA_Room_Builder.png",
          "imageheight":1280,
          "imagewidth":800,
          "margin":0,
@@ -532,7 +532,7 @@
         {
          "columns":12,
          "firstgid":1303,
-         "image":"tilesets\/WA_Other_Furniture.png",
+         "image":"..\/tilesets\/WA_Other_Furniture.png",
          "imageheight":416,
          "imagewidth":384,
          "margin":0,
