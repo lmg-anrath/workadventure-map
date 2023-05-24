@@ -11,11 +11,11 @@ console.log('Script started successfully');
 
 // Waiting for the API to be ready
 // @ts-ignore
-WA.onInit().then(() => {
+WA.onInit().then(async () => {
     // @ts-ignore
     WA.nav.goToRoom('/_/global/maps.workadventure-lmg.de/maps/map.tmj');
 
-    Wait(2000);
+    await Wait(2000);
     
     console.log('mooving to 0, 0');
 
