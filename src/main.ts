@@ -3,6 +3,7 @@
 
 // @ts-ignore
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
+import {Wait} from './common/functions';
 
 console.log('Script started successfully');
 
@@ -13,6 +14,10 @@ console.log('Script started successfully');
 WA.onInit().then(() => {
     // @ts-ignore
     WA.nav.goToRoom('/_/global/maps.workadventure-lmg.de/maps/map.tmj');
+
+    Wait(2000);
+
+    WA.player.moveTo(0, 0);
 
     // Create a new website object
 
