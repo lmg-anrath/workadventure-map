@@ -16,6 +16,8 @@ WA.onInit().then(() => {
     WA.nav.goToRoom('/_/global/maps.workadventure-lmg.de/maps/map.tmj');
 
     Wait(2000);
+    
+    console.log('mooving to 0, 0');
 
     WA.player.moveTo(0, 0);
 
