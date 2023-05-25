@@ -1,3 +1,5 @@
-# WorkAdventure Map Starter Kit - Src Folder
+# Workadventure Map Scripts
 
-In this directory you can put your scripts and other source code files.
+> **Info**
+> 
+> In diesem Ordner werden die Scripts für die verschiedenen Maps geschrieben. Ich bitte darum, dass hier nichts ohne die Erlaubnis von JH, Mika oder Jeremy geändert wird. 
