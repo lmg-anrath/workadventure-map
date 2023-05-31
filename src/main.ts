@@ -15,7 +15,7 @@ console.log('Script started successfully');
 // @ts-ignore
 WA.onInit().then(async () => {
     // @ts-ignore
-    WA.nav.goToRoom('/_/global/maps.workadventure-lmg.de/maps/rooms/forum.tmj');
+    // WA.nav.goToRoom('/_/global/maps.workadventure-lmg.de/maps/rooms/forum.tmj');
 
     // Create a new website object
 
