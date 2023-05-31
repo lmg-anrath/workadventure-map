@@ -20027,7 +20027,7 @@
       "y": 0
     },
     {
-      "name": "Player",
+      "name": "floorLayer",
       "objects": [],
       "opacity": 1,
       "type": "objectgroup",
@@ -40069,7 +40069,7 @@
     {
       "columns": 6,
       "firstgid": 1,
-      "image": "forum-chunk-1-7ea7e801.png",
+      "image": "forum-chunk-1-f320c0bf.png",
       "imageheight": 192,
       "imagewidth": 192,
       "margin": 0,
