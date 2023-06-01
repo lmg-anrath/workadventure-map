@@ -794,6 +794,13 @@
  "nextobjectid":7,
  "orientation":"orthogonal",
  "renderorder":"right-down",
+ "properties":[
+       {
+              "name":"script",
+              "type":"string",
+              "value":"..\/..\/src\/main.ts"
+       }
+ ],
  "tiledversion":"1.9.2",
  "tileheight":32,
  "tilesets":[

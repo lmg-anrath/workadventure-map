@@ -1,0 +1,11 @@
+{
+    "Zones":{
+        "doors": {
+            "forum_tür_1": "/_/global/maps.workadventure-lmg.de/maps/rooms/sek1_eg.tmj",
+            "forum_tür_2": "/_/global/maps.workadventure-lmg.de/maps/rooms/sek2_eg.tmj"
+        },
+        "iFrames": {
+            "vertretungsplan": "https://m1kx.github.io"
+        }
+    }
+}
