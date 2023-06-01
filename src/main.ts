@@ -25,6 +25,7 @@ export function Global() {
         Object.entries(Config.Zones.doors).forEach(([zone, targetRoom]) => {
             console.log(zone, targetRoom);
             WA.room.area.onEnter(zone).subscribe(() => {
+                console.log("entered zone");
                 WA.nav.goToRoom(targetRoom);
             })
         })
@@ -37,7 +38,7 @@ export function Global() {
                 console.log(event);
 
                 WA.ui.modal.openModal({
-                    title: "Stundenplan",
+                    title: "Vertretungsplan",
                     src: 'https://m1kx.github.io',
                     allow: "fullscreen",
                     allowApi: true,
