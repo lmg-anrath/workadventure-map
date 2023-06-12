@@ -2,7 +2,7 @@
     "Zones":{
         "doors": {
             "eg-forum-door-sek1": "/_/global/maps.workadventure-lmg.de/maps/rooms/sek1_eg.tmj",
-            "eg-forum-door-sek2": "/_/global/maps.workadventure-lmg.de/maps/rooms/sek2_eg.tmj"
+            "eg-forum-door-sek2": "/_/global/maps.workadventure-lmg.de/maps/rooms/sek2.tmj"
         },
         "iFrames": {
             "vertretungsplan": "https://m1kx.github.io"
