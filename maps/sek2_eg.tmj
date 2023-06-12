@@ -793,6 +793,12 @@
  "nextlayerid":17,
  "nextobjectid":14,
  "orientation":"orthogonal",
+ "properties":[
+        {
+         "name":"script",
+         "type":"string",
+         "value":"..\/src\/main.ts"
+        }],
  "renderorder":"right-down",
  "tiledversion":"1.9.2",
  "tileheight":32,
@@ -800,7 +806,7 @@
         {
          "columns":25,
          "firstgid":1,
-         "image":"..\/..\/tilesets\/WA_Room_Builder.png",
+         "image":"..\/tilesets\/WA_Room_Builder.png",
          "imageheight":1280,
          "imagewidth":800,
          "margin":0,
@@ -931,7 +937,7 @@
         {
          "columns":12,
          "firstgid":1001,
-         "image":"..\/..\/tilesets\/WA_Other_Furniture.png",
+         "image":"..\/tilesets\/WA_Other_Furniture.png",
          "imageheight":416,
          "imagewidth":384,
          "margin":0,
@@ -972,7 +978,7 @@
         {
          "columns":4,
          "firstgid":1157,
-         "image":"..\/..\/tilesets\/Basic-Kachel-32x32.png",
+         "image":"..\/tilesets\/Basic-Kachel-32x32.png",
          "imageheight":128,
          "imagewidth":128,
          "margin":0,
