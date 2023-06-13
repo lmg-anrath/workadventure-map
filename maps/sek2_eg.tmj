@@ -777,7 +777,7 @@
                  "class":"area",
                  "height":214.61716937355,
                  "id":11,
-                 "name":"eg-sek2-door-forum",
+                 "name":"door-to-forum",
                  "rotation":0,
                  "visible":true,
                  "width":24.4908481567414,
@@ -797,7 +797,7 @@
         {
          "name":"script",
          "type":"string",
-         "value":"..\/src\/main.ts"
+         "value":"..\/src\/rooms\/sek2.ts"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.9.2",

@@ -1018,7 +1018,7 @@
         {
          "name":"script",
          "type":"string",
-         "value":"../src/main.ts"
+         "value":"..\/src\/main.ts"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.9.2",
@@ -1197,15 +1197,15 @@
          "tilewidth":32
         }, 
         {
-         "columns":1,
+         "columns":4,
          "firstgid":1157,
          "image":"..\/tilesets\/Basic-Kachel-32x32.png",
-         "imageheight":32,
-         "imagewidth":32,
+         "imageheight":128,
+         "imagewidth":128,
          "margin":0,
          "name":"Basic-Kachel-32x32",
          "spacing":0,
-         "tilecount":1,
+         "tilecount":16,
          "tileheight":32,
          "tilewidth":32
         }],

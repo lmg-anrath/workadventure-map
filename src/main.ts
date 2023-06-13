@@ -9,6 +9,8 @@ console.log('Script started successfully');
 export function Global() {
     WA.onInit().then(async () => {
     
+        WA.nav.goToRoom('/_/global/maps.workadventure-lmg.de/maps/entrance.tmj');
+        
         //@region: WA Boilerplate
         bootstrapExtra().then(() => {
             console.log('Scripting API Extra ready');
