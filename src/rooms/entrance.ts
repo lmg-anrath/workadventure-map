@@ -20,6 +20,6 @@ WA.onInit().then(async () => {
 
 })
 
-console.log('if1.ts is running');
+console.log('entrance.ts is running');
 
 export {};
