@@ -33,7 +33,7 @@ export function Global() {
         //@region: Tests
         WA.ui.actionBar.addButton({
             id: 'button_1',
-            label: 'Stundenplan',
+            label: 'Vertretungsplan',
             callback: (event) => {
                 console.log(event);
 
