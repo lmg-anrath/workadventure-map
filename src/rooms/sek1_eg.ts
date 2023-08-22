@@ -14,8 +14,12 @@ WA.onInit().then(async () => {
     }
     console.log('json Config loaded');
 
-    Object.entries(Config.Zones).forEach(([key, value]) => {
-        console.log(key, value);
+    Object.entries(Config.Zones.doors).forEach(([zone, targetRoom]) => {
+        console.log(zone, targetRoom);
+        WA.room.area.onEnter(zone).subscribe(() => {
+            console.log("entered zone");
+            WA.nav.goToRoom(targetRoom);
+        })
     })
 
 })
