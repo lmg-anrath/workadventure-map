@@ -8,7 +8,7 @@ console.log('Script started successfully');
 
 export function Global() {
     WA.onInit().then(async () => {
-            
+
         //@region: WA Boilerplate
         bootstrapExtra().then(() => {
             console.log('Scripting API Extra ready');
@@ -46,6 +46,26 @@ export function Global() {
                 })
             }
         });
+        
+        WA.ui.actionBar.addButton({
+            id: 'map-button',
+            // @ts-ignore
+            type: 'action',
+            imageSrc: 'https://hugoaverty.github.io/map-overview/img/map.svg',
+            toolTip: 'Sehe die Karte an!',
+            callback: async (event) => {
+                WA.ui.modal.closeModal();
+                const pos = await WA.player.getPosition();
+                let mapOverviewPage = WA.ui.modal.openModal({
+                    src: `https://www.workadventure-lmg.de/map/index.html?x=${pos.x}&y=${pos.y}`,
+                    allow: 'fullscreen',
+                    title: 'Karte des LMG',
+                    allowApi: true,
+                    position: 'center',
+                })
+                console.log(`map overview ${mapOverviewPage}`)
+            }
+        })
     }).catch(e => console.error(e));
 }
 
