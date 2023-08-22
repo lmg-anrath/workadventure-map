@@ -45,17 +45,18 @@ export function Global() {
                     position: "right",
                 })
             }
-        });
+        })
         
         WA.ui.actionBar.addButton({
             id: 'map-button',
             // @ts-ignore
             type: 'action',
-            imageSrc: 'https://hugoaverty.github.io/map-overview/img/map.svg',
+            imageSrc: 'https://www.workadventure-lmg.de/map/img/map.svg',
             toolTip: 'Sehe die Karte an!',
             callback: async (event) => {
-                WA.ui.modal.closeModal();
-                const pos = await WA.player.getPosition();
+                console.log('map event ', event)
+                WA.ui.modal.closeModal()
+                const pos = await WA.player.getPosition()
                 let mapOverviewPage = WA.ui.modal.openModal({
                     src: `https://www.workadventure-lmg.de/map/index.html?x=${pos.x}&y=${pos.y}`,
                     allow: 'fullscreen',
@@ -66,7 +67,7 @@ export function Global() {
                 console.log(`map overview ${mapOverviewPage}`)
             }
         })
-    }).catch(e => console.error(e));
+    }).catch(e => console.error(e))
 }
 
 Global();
