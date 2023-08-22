@@ -2,7 +2,7 @@
     "Zones": {
         "if1_pdf_if_curriculum": "https://www.office.com",
         "doors": {
-            "door_sek2": "/_/global/maps.workadventure-lmg.de/maps/if1.tmj"
+            "door_sek2": "/_/global/maps.workadventure-lmg.de/maps/sek1_eg.tmj"
         }
     }
 }
