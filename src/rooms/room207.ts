@@ -1,5 +1,5 @@
 import * as Config from '../configs/room207.config.json';
-import {Global} from '../main';
+import { Global } from '../main';
 
 //@comment: Test-Code
 WA.onInit().then(async () => {
@@ -14,12 +14,16 @@ WA.onInit().then(async () => {
     }
     console.log('json Config loaded');
 
-    Object.entries(Config.Zones).forEach(([key, value]) => {
-        console.log(key, value);
+    Object.entries(Config.Zones.doors).forEach(([zone, targetRoom]) => {
+        console.log(zone, targetRoom);
+        WA.room.area.onEnter(zone).subscribe(() => {
+            console.log("entered zone");
+            WA.nav.goToRoom(targetRoom);
+        })
     })
 
 })
 
 console.log('room207.ts is running');
 
-export {};
+export { };

@@ -1,6 +1,7 @@
 {
     "Zones": {
         "doors": {
+            "placeholder": ""
         }
     }
 }
