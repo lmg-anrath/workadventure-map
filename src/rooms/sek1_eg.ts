@@ -1,4 +1,4 @@
-import * as Config from '../configs/sek1.config.json';
+import * as Config from '../configs/sek1_eg.config.json';
 import {Global} from '../main';
 
 //@comment: Test-Code
@@ -20,6 +20,6 @@ WA.onInit().then(async () => {
 
 })
 
-console.log('sek1.ts is running');
+console.log('sek1_eg.ts is running');
 
 export {};
