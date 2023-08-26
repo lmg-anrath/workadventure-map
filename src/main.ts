@@ -52,7 +52,7 @@ export function Global() {
             // @ts-ignore
             type: 'action',
             imageSrc: 'https://www.workadventure-lmg.de/map/img/map.svg',
-            toolTip: 'Sehe die Karte an!',
+            toolTip: 'Öffne die Karte',
             callback: async (event) => {
                 console.log('map event ', event)
                 WA.ui.modal.closeModal()
