@@ -51,14 +51,14 @@ export function Global() {
             id: 'map-button',
             // @ts-ignore
             type: 'action',
-            imageSrc: 'https://www.workadventure-lmg.de/map/img/map.svg',
+            imageSrc: 'https://www.workadventure-lmg.de/map.svg',
             toolTip: 'Öffne die Karte',
             callback: async (event) => {
                 console.log('map event ', event)
                 WA.ui.modal.closeModal()
                 const pos = await WA.player.getPosition()
                 let mapOverviewPage = WA.ui.modal.openModal({
-                    src: `https://www.workadventure-lmg.de/map/index.html?x=${pos.x}&y=${pos.y}`,
+                    src: `https://www.workadventure-lmg.de/map?x=${pos.x}&y=${pos.y}&map=`,
                     allow: 'fullscreen',
                     title: 'Karte des LMG',
                     allowApi: true,
