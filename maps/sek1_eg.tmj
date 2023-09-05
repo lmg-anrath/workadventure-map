@@ -906,10 +906,6 @@
          "tilecount":16,
          "tileheight":32,
          "tilewidth":32
-        }, 
-        {
-         "firstgid":1843,
-         "source":"..\/..\/..\/..\/Desktop\/a\/Tiled_Projekte\/WA_Room_Builder.tsx"
         }],
  "tilewidth":32,
  "type":"map",
