@@ -28,7 +28,7 @@ WA.onInit().then(async () => {
             console.log("entered zone");
             WA.ui.modal.openModal({
                 title: "IF1",
-                src: 'targetURL',
+                src: targetURL,
                 allow: "fullscreen",
                 allowApi: true,
                 position: "right",
