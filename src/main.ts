@@ -39,7 +39,7 @@ export function Global() {
 
                 WA.ui.modal.openModal({
                     title: "Vertretungsplan",
-                    src: 'https://m1kx.github.io',
+                    src: 'https://bot.mikaco.de/',
                     allow: "fullscreen",
                     allowApi: true,
                     position: "right",

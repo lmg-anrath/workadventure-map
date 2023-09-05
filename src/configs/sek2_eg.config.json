@@ -1,7 +1,8 @@
 {
     "Zones": {
         "doors": {
-            "eg-sek2-door-forum": "/_/global/maps.workadventure-lmg.de/maps/forum.tmj"
+            "eg-sek2-door-forum": "/_/global/maps.workadventure-lmg.de/maps/forum.tmj",
+            "eg-sek2-room-if1": "/_/global/maps.workadventure-lmg.de/maps/if1.tmj"
         }
     }
 }

@@ -23,6 +23,18 @@ WA.onInit().then(async () => {
         })
     })
 
+    Object.entries(Config.Zones.ressources).forEach(([zone, targetURL]) => {
+        WA.room.area.onEnter(zone).subscribe(() => {
+            console.log("entered zone");
+            WA.ui.modal.openModal({
+                title: "IF1",
+                src: 'targetURL',
+                allow: "fullscreen",
+                allowApi: true,
+                position: "right",
+            })
+        })
+    })
 })
 
 console.log('if1.ts is running');

@@ -1,6 +1,9 @@
 {
     "Zones": {
-        "if1_pdf_if_curriculum": "https://www.office.com",
+        "ressources": {
+            "if1_pdf_if_curriculum": "https://maps.workadventure-lmg.de/ressources/Schulinterner_Lehrplan_Informatik.pdf",
+            "if1_pdf_if_sek1_content": "https://www.wetterstation-lmg.de/"
+        },
         "doors": {
             "door_sek2": "/_/global/maps.workadventure-lmg.de/maps/sek2_eg.tmj"
         }
