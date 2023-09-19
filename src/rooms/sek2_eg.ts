@@ -23,6 +23,10 @@ WA.onInit().then(async () => {
         })
     })
 
+    WA.room.area.onEnter('eg_sek2_monitor').subscribe(() => {
+        console.log("entered")
+    })
+
 })
 
 console.log('sek2_eg.ts is running');
