@@ -1012,7 +1012,8 @@
                          "name":"collide",
                          "type":"bool",
                          "value":true
-                        }]
+                        }],
+                 "type":"area"
                 }, 
                 {
                  "id":393,
@@ -1021,7 +1022,8 @@
                          "name":"collide",
                          "type":"bool",
                          "value":true
-                        }]
+                        }],
+                 "type":"area"
                 }],
          "tilewidth":32
         }],
