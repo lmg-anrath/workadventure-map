@@ -31,8 +31,16 @@ WA.onInit().then(async () => {
                 src: targetURL,
                 allow: "fullscreen",
                 allowApi: true,
-                position: "right",
+                position: "center",
             })
+
+            const playerCoords: any = WA.player.getPosition();
+            WA.camera.set(playerCoords.x, playerCoords.y, 100, 100, false, true)
+        })
+
+        WA.room.area.onLeave(zone).subscribe(() => {
+            console.log("left zone");
+            WA.ui.modal.closeModal();
         })
     })
 })
