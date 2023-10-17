@@ -1002,7 +1002,7 @@
                  "id":94,
                  "properties":[
                         {
-                         "name":"collide",
+                         "name":"collides",
                          "type":"bool",
                          "value":true
                         }],
