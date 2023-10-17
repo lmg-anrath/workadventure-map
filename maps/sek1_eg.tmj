@@ -432,7 +432,7 @@
                  "id":5,
                  "name":"eg_sek1_door_classroom1_room207",
                  "rotation":0,
-                 "type":"",
+                 "type":"area",
                  "visible":true,
                  "width":30.6666666666667,
                  "x":641.333333333333,
