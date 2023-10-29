@@ -980,7 +980,7 @@
         {
          "name":"script",
          "type":"string",
-         "value":"..\/src\/main.ts"
+         "value":"..\/src\/rooms\/forum.ts"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.9.2",
