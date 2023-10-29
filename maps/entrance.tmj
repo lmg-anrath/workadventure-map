@@ -96,14 +96,8 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":19,
          "id":8,
-         "name":"frontDoor",
+         "name":"start",
          "opacity":1,
-         "properties":[
-                {
-                 "name":"startLayer",
-                 "type":"bool",
-                 "value":true
-                }],
          "type":"tilelayer",
          "visible":false,
          "width":26,

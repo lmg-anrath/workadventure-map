@@ -40,14 +40,15 @@ WA.onInit().then(async () => {
 					})
 					console.log(`map overview ${mapOverviewPage}`)
 				}
+			} else {
+				WA.ui.modal.openModal({
+					title: "Haupteingang",
+					src: targetURL,
+					allow: "fullscreen",
+					allowApi: true,
+					position: "center",
+				})
 			}
-            WA.ui.modal.openModal({
-                title: "Haupteingang",
-                src: targetURL,
-                allow: "fullscreen",
-                allowApi: true,
-                position: "center",
-            })
         })
 
         WA.room.area.onLeave(zone).subscribe(() => {
