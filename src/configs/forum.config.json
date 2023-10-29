@@ -1,0 +1,8 @@
+{
+    "Zones": {
+        "doors": {
+            "eg_forum_door_entrance": "/_/global/maps.workadventure-lmg.de/maps/entrance.tmj#forumDoor",
+            "eg_forum_door_sek2": "/_/global/maps.workadventure-lmg.de/maps/sek2_eg.tmj"
+        }
+    }
+}

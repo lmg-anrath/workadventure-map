@@ -1,8 +1,6 @@
 {
     "Zones":{
         "doors": {
-            "eg-forum-door-sek1": "/_/global/maps.workadventure-lmg.de/maps/entrance.tmj#forumDoor",
-            "eg-forum-door-sek2": "/_/global/maps.workadventure-lmg.de/maps/sek2_eg.tmj"
         },
         "iFrames": {
             "vertretungsplan": "https://m1kx.github.io"
