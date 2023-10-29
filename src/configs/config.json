@@ -1,6 +1,7 @@
 {
     "Zones":{
         "doors": {
+			"placeholder": "/_/global/maps.workadventure-lmg.de/maps/entrance.tmj"
         },
         "iFrames": {
             "vertretungsplan": "https://m1kx.github.io"
