@@ -1,8 +1,13 @@
 {
     "Zones": {
         "doors": {
-            "eg_entrance_door_sek1": "/_/global/maps.workadventure-lmg.de/maps/sek1_eg.tmj",
-            "eg_entrance_door_forum": "/_/global/maps.workadventure-lmg.de/maps/forum.tmj"
+            "eg_entrance_door_forum": "/_/global/maps.workadventure-lmg.de/maps/forum.tmj",
+            "eg_entrance_door_secretariat": "/_/global/maps.workadventure-lmg.de/maps/secretariat.tmj"
+        },
+		"ressources": {
+            "eg_entrance_action_monitor": "https://lmg-anrath.de/aktuelle_plaene/Vertretungsplan/heute/subst_001.htm",
+			"eg_entrance_action_map": "map",
+			"eg_entrance_action_credits": "https://www.lmg-anrath.de/zweidimensionales-lmg-dank-workadventure-ag/"
         }
     }
 }
