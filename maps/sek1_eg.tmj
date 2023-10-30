@@ -384,165 +384,165 @@
          "name":"zones",
          "objects":[
                 {
+                 "class":"",
                  "height":65.3333333333334,
                  "id":1,
                  "name":"eg_sek1_stairsInTheMiddle",
                  "rotation":0,
-                 "type":"",
                  "visible":true,
                  "width":66.6666666666665,
                  "x":2494.66666666667,
                  "y":541.333333333333
                 }, 
                 {
+                 "class":"",
                  "height":93.3333333333333,
                  "id":2,
                  "name":"eg_sek1_door_roomM2",
                  "rotation":0,
-                 "type":"",
                  "visible":true,
                  "width":30.6666666666665,
                  "x":2432,
                  "y":192
                 }, 
                 {
+                 "class":"",
                  "height":97.3333333333333,
                  "id":3,
                  "name":"eg_sek1_door_classroom3",
                  "rotation":0,
-                 "type":"",
                  "visible":true,
                  "width":30.6666666666665,
                  "x":1696,
                  "y":157.333333333333
                 }, 
                 {
+                 "class":"",
                  "height":96,
                  "id":4,
                  "name":"eg_sek1_door_classroom2",
                  "rotation":0,
-                 "type":"",
                  "visible":true,
                  "width":32,
                  "x":1152,
                  "y":129.333333333333
                 }, 
                 {
+                 "class":"area",
                  "height":102.666666666667,
                  "id":5,
                  "name":"eg_sek1_door_classroom1_room207",
                  "rotation":0,
-                 "type":"area",
                  "visible":true,
                  "width":30.6666666666667,
                  "x":641.333333333333,
                  "y":89.3333333333333
                 }, 
                 {
+                 "class":"",
                  "height":66.6666666666666,
                  "id":6,
                  "name":"eg_sek1_stairsNextToRoom207",
                  "rotation":0,
-                 "type":"",
                  "visible":true,
-                 "width":64,
+                 "width":95.6666666666667,
                  "x":64,
                  "y":252
                 }, 
                 {
+                 "class":"",
                  "height":130.666666666667,
                  "id":7,
                  "name":"eg_sek1_door_classroom7",
                  "rotation":0,
-                 "type":"",
                  "visible":true,
                  "width":32,
                  "x":1568,
                  "y":926.666666666667
                 }, 
                 {
+                 "class":"",
                  "height":126.666666666667,
                  "id":8,
                  "name":"eg_sek1_door_classroom8",
                  "rotation":0,
-                 "type":"",
                  "visible":true,
                  "width":33.333333333333,
                  "x":2112,
                  "y":864
                 }, 
                 {
+                 "class":"",
                  "height":129.333333333333,
                  "id":9,
                  "name":"eg_sek1_door_roomForGames",
                  "rotation":0,
-                 "type":"",
                  "visible":true,
                  "width":33.3333333333335,
                  "x":2654.66666666667,
                  "y":801.333333333333
                 }, 
                 {
+                 "class":"",
                  "height":161.333333333333,
                  "id":10,
                  "name":"eg_sek1_door_outdoor",
                  "rotation":0,
-                 "type":"",
                  "visible":true,
                  "width":128.166666666667,
                  "x":3232.16666666667,
                  "y":704
                 }, 
                 {
+                 "class":"",
                  "height":33.3333333333334,
                  "id":11,
                  "name":"eg_sek1_door_classroom4",
                  "rotation":0,
-                 "type":"",
                  "visible":true,
                  "width":62.6666666666665,
                  "x":1312,
                  "y":766.666666666667
                 }, 
                 {
+                 "class":"",
                  "height":36,
                  "id":12,
                  "name":"eg_sek1_door_classroom5",
                  "rotation":0,
-                 "type":"",
                  "visible":true,
                  "width":62.6666666666667,
                  "x":1313.33333333333,
                  "y":957.333333333333
                 }, 
                 {
+                 "class":"",
                  "height":34.6666666666667,
                  "id":13,
                  "name":"eg_sek1_door_classroomNextToWindows",
                  "rotation":0,
-                 "type":"",
                  "visible":true,
                  "width":64,
                  "x":1312,
                  "y":1501.33333333333
                 }, 
                 {
+                 "class":"",
                  "height":320.666666666667,
                  "id":14,
                  "name":"eg_sek1_windows",
                  "rotation":0,
-                 "type":"",
                  "visible":true,
-                 "width":96.6666666666667,
-                 "x":1503.33333333333,
+                 "width":77.6666666666667,
+                 "x":1522.33333333333,
                  "y":1471.33333333333
                 }, 
                 {
+                 "class":"area",
                  "height":323.333333333333,
                  "id":15,
                  "name":"eg_sek1_door_entrance",
                  "rotation":0,
-                 "type":"area",
                  "visible":true,
                  "width":42,
                  "x":3412.66666666667,
@@ -732,7 +732,7 @@
          "value":"..\/src\/rooms\/sek1_eg.ts"
         }],
  "renderorder":"right-down",
- "tiledversion":"1.10.1",
+ "tiledversion":"1.9.2",
  "tileheight":32,
  "tilesets":[
         {
@@ -986,16 +986,17 @@
          "tileheight":32,
          "tiles":[
                 {
+                 "class":"area",
                  "id":94,
                  "properties":[
                         {
                          "name":"collides",
                          "type":"bool",
                          "value":true
-                        }],
-                 "type":"area"
+                        }]
                 }, 
                 {
+                 "class":"area",
                  "id":114,
                  "objectgroup":
                     {
@@ -1003,6 +1004,7 @@
                      "name":"",
                      "objects":[
                             {
+                             "class":"area",
                              "height":0,
                              "id":2,
                              "name":"",
@@ -1026,7 +1028,6 @@
                                      "value":true
                                     }],
                              "rotation":0,
-                             "type":"area",
                              "visible":true,
                              "width":0,
                              "x":31.812865497076,
@@ -1043,10 +1044,10 @@
                          "name":"collides",
                          "type":"bool",
                          "value":false
-                        }],
-                 "type":"area"
+                        }]
                 }, 
                 {
+                 "class":"area",
                  "id":115,
                  "objectgroup":
                     {
@@ -1054,6 +1055,7 @@
                      "name":"",
                      "objects":[
                             {
+                             "class":"area",
                              "height":0,
                              "id":1,
                              "name":"",
@@ -1077,7 +1079,6 @@
                                      "value":true
                                     }],
                              "rotation":0,
-                             "type":"area",
                              "visible":true,
                              "width":0,
                              "x":0.0850611376927166,
@@ -1094,30 +1095,30 @@
                          "name":"collides",
                          "type":"bool",
                          "value":false
-                        }],
-                 "type":"area"
+                        }]
                 }, 
                 {
+                 "class":"area",
                  "id":116,
                  "properties":[
                         {
                          "name":"collides",
                          "type":"bool",
                          "value":true
-                        }],
-                 "type":"area"
+                        }]
                 }, 
                 {
+                 "class":"area",
                  "id":118,
                  "properties":[
                         {
                          "name":"collides",
                          "type":"bool",
                          "value":true
-                        }],
-                 "type":"area"
+                        }]
                 }, 
                 {
+                 "class":"area",
                  "id":139,
                  "objectgroup":
                     {
@@ -1125,6 +1126,7 @@
                      "name":"",
                      "objects":[
                             {
+                             "class":"area",
                              "height":0,
                              "id":1,
                              "name":"",
@@ -1148,7 +1150,6 @@
                                      "value":true
                                     }],
                              "rotation":0,
-                             "type":"area",
                              "visible":true,
                              "width":0,
                              "x":0.425305688463583,
@@ -1165,10 +1166,10 @@
                          "name":"collides",
                          "type":"bool",
                          "value":false
-                        }],
-                 "type":"area"
+                        }]
                 }, 
                 {
+                 "class":"area",
                  "id":140,
                  "objectgroup":
                     {
@@ -1176,6 +1177,7 @@
                      "name":"",
                      "objects":[
                             {
+                             "class":"area",
                              "height":0,
                              "id":1,
                              "name":"",
@@ -1199,7 +1201,6 @@
                                      "value":true
                                     }],
                              "rotation":0,
-                             "type":"area",
                              "visible":true,
                              "width":0,
                              "x":31.812865497076,
@@ -1216,18 +1217,17 @@
                          "name":"collides",
                          "type":"bool",
                          "value":false
-                        }],
-                 "type":"area"
+                        }]
                 }, 
                 {
+                 "class":"area",
                  "id":141,
                  "properties":[
                         {
                          "name":"collides",
                          "type":"bool",
                          "value":true
-                        }],
-                 "type":"area"
+                        }]
                 }, 
                 {
                  "id":353,
@@ -1239,44 +1239,44 @@
                         }]
                 }, 
                 {
+                 "class":"area",
                  "id":393,
                  "properties":[
                         {
                          "name":"collides",
                          "type":"bool",
                          "value":true
-                        }],
-                 "type":"area"
+                        }]
                 }, 
                 {
+                 "class":"area",
                  "id":454,
                  "properties":[
                         {
                          "name":"collides",
                          "type":"bool",
                          "value":true
-                        }],
-                 "type":"area"
+                        }]
                 }, 
                 {
+                 "class":"area",
                  "id":479,
                  "properties":[
                         {
                          "name":"collides",
                          "type":"bool",
                          "value":false
-                        }],
-                 "type":"area"
+                        }]
                 }, 
                 {
+                 "class":"area",
                  "id":520,
                  "properties":[
                         {
                          "name":"collides",
                          "type":"bool",
                          "value":true
-                        }],
-                 "type":"area"
+                        }]
                 }, 
                 {
                  "id":521,
@@ -1288,14 +1288,14 @@
                         }]
                 }, 
                 {
+                 "class":"area",
                  "id":522,
                  "properties":[
                         {
                          "name":"collides",
                          "type":"bool",
                          "value":true
-                        }],
-                 "type":"area"
+                        }]
                 }],
          "tilewidth":32
         }, 
@@ -1314,6 +1314,6 @@
         }],
  "tilewidth":32,
  "type":"map",
- "version":"1.10",
+ "version":"1.9",
  "width":109
 }
