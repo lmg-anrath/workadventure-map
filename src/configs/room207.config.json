@@ -1,7 +1,7 @@
 {
     "Zones": {
         "doors": {
-            "placeholder": ""
+            "eg_room207_door_sek1": "/_/global/maps.workadventure-lmg.de/maps/sek1_eg.tmj#room207Door"
         }
     }
 }
