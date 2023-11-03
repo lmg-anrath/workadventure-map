@@ -54,7 +54,7 @@
          "name":"start",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":40,
          "x":0,
          "y":0
@@ -116,7 +116,7 @@
                  "value":true
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":40,
          "x":0,
          "y":0
@@ -178,7 +178,7 @@
                  "value":true
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":40,
          "x":0,
          "y":0
@@ -240,7 +240,7 @@
                  "value":true
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":40,
          "x":0,
          "y":0
@@ -302,7 +302,7 @@
                  "value":true
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":40,
          "x":0,
          "y":0
@@ -364,7 +364,7 @@
                  "value":true
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":40,
          "x":0,
          "y":0
@@ -420,7 +420,7 @@
          "name":"collisions",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":40,
          "x":0,
          "y":0
@@ -891,77 +891,77 @@
          "name":"zones",
          "objects":[
                 {
-                 "class":"area",
                  "height":224,
                  "id":11,
                  "name":"eg_forum_door_sek2",
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
                  "width":30.5,
                  "x":1248.66666666667,
                  "y":576
                 }, 
                 {
-                 "class":"area",
                  "height":223.833333333333,
                  "id":13,
                  "name":"eg_forum_door_entrance",
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
                  "width":32,
                  "x":-0.5,
                  "y":576.166666666667
                 }, 
                 {
-                 "class":"area",
                  "height":31.5,
                  "id":14,
                  "name":"eg_forum_door_fo1",
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
                  "width":78,
                  "x":844,
                  "y":140.25
                 }, 
                 {
-                 "class":"area",
                  "height":66.0249197405881,
                  "id":15,
                  "name":"eg_forum_door_fo2",
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
                  "width":73.7565482407736,
                  "x":359.431815331904,
                  "y":106.009807879597
                 }, 
                 {
-                 "class":"area",
                  "height":148.333,
                  "id":114,
                  "name":"eg_forum_action_mixer",
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
                  "width":189,
                  "x":396,
                  "y":1132.25
                 }, 
                 {
-                 "class":"area",
                  "height":150.166666666667,
                  "id":115,
                  "name":"eg_forum_door_bib",
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
                  "width":130.166666666667,
                  "x":574.5,
                  "y":1290.91666666667
                 }, 
                 {
-                 "class":"area",
                  "height":52,
                  "id":116,
                  "name":"eg_forum_action_speaker",
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
                  "width":64.6666666666667,
                  "x":607.333333333333,
@@ -1039,7 +1039,7 @@
          "value":"..\/src\/rooms\/forum.ts"
         }],
  "renderorder":"right-down",
- "tiledversion":"1.9.2",
+ "tiledversion":"1.10.2",
  "tileheight":32,
  "tilesets":[
         {
@@ -1199,6 +1199,6 @@
         }],
  "tilewidth":32,
  "type":"map",
- "version":"1.9",
+ "version":"1.10",
  "width":40
 }
