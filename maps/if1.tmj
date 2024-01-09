@@ -408,6 +408,7 @@
          "y":0
         }, 
         {
+         "class":"area",
          "draworder":"topdown",
          "id":16,
          "name":"zones",
