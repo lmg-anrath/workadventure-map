@@ -1,3 +1,4 @@
+import { log } from 'console';
 import * as Config from '../configs/entrance.config.json';
 import {Global, RegiterZone} from '../main';
 
@@ -12,7 +13,7 @@ WA.onInit().then(async () => {
         console.log("[ERROR] : Config not found.");
         return;
     }
-    
+
     //@region: Door-zone Event Handler
     RegiterZone(Config.Zones.doors);
 
