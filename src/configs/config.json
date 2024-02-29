@@ -7,5 +7,5 @@
             "vertretungsplan": "https://m1kx.github.io"
         }
     },
-    "Env": "production"
+    "dev": false
 }
