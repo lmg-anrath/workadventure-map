@@ -1,0 +1,1 @@
+import{G as n,R as e}from"./main-4e88276b.js";const o={doors:{placeholder:"entrance.tmj"}},t={Zones:o},r=Object.freeze(Object.defineProperty({__proto__:null,Zones:o,default:t},Symbol.toStringTag,{value:"Module"}));WA.onInit().then(async()=>{if(n(),!r){console.log("[ERROR] : Config not found.");return}e(o.doors)});console.log("aufenthaltsraum.ts is running");
