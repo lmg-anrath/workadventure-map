@@ -77,7 +77,6 @@ export function Global() {
 export function RegiterZone(Zone: Zone) {
     console.log("Zone", Zone)
 
-
     if (!Zone) {
         return console.error("Keine Config gefunden! Zone:", Zone)
     }
