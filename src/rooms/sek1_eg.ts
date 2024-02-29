@@ -1,5 +1,5 @@
 import * as Config from '../configs/sek1_eg.config.json';
-import {Global} from '../main';
+import {Global, RegiterZone} from '../main';
 
 //@comment: Test-Code
 WA.onInit().then(async () => {
@@ -12,16 +12,9 @@ WA.onInit().then(async () => {
         console.log("[ERROR] : Config not found.");
         return;
     }
-    console.log('json Config loaded');
 
     //@region: Door-zone Event Handler
-    Object.entries(Config.Zones.doors).forEach(([zone, targetRoom]) => {
-        console.log(zone, targetRoom);
-        WA.room.area.onEnter(zone).subscribe(() => {
-            console.log("entered zone");
-            WA.nav.goToRoom(targetRoom);
-        })
-    })
+    RegiterZone(Config.Zones.doors);
 
 })
 

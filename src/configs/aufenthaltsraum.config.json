@@ -1,7 +1,7 @@
 {
     "Zones": {
         "doors": {
-			"placeholder": "/_/global/maps.workadventure-lmg.de/maps/entrance.tmj"
+			"placeholder": "entrance.tmj"
         }
     }
 }

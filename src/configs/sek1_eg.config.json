@@ -1,8 +1,8 @@
 {
     "Zones": {
         "doors": {
-            "eg_sek1_door_entrance": "/_/global/maps.workadventure-lmg.de/maps/secretariat.tmj#sek1Door",
-            "eg_sek1_door_classroom1_room207": "/_/global/maps.workadventure-lmg.de/maps/room207.tmj"
+            "eg_sek1_door_entrance": "secretariat.tmj#sek1Door",
+            "eg_sek1_door_classroom1_room207": "room207.tmj"
         }
     }
 }

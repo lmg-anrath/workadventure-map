@@ -1,0 +1,10 @@
+{
+  "printWidth": 1000000,
+  "tabWidth": 4,
+  "trailingComma":"none",
+  "bracketSpacing":false,
+  "jsxBracketSameLine":false,
+  "arrowParens":"always",
+  "filePath":"./",
+  "proseWrap":"never"
+}

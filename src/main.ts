@@ -1,14 +1,10 @@
 /// <reference path="../node_modules/@workadventure/iframe-api-typings/iframe_api.d.ts" />
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
-//@ts-ignore
-import {Wait} from './common/functions';
 import * as Config from './configs/config.json';
-
-console.log('Script started successfully');
+import { Zone } from "./types/zone";
 
 export function Global() {
     WA.onInit().then(async () => {
-
         //@region: WA Boilerplate
         bootstrapExtra().then(() => {
             console.log('Scripting API Extra ready');
@@ -19,24 +15,33 @@ export function Global() {
             console.log("[ERROR] : Config not found.");
             return;
         }
-        console.log('json Config loaded');
     
         //@region: Door-zone Event Handler 
         Object.entries(Config.Zones.doors).forEach(([zone, targetRoom]) => {
-            console.log(zone, targetRoom);
             WA.room.area.onEnter(zone).subscribe(() => {
-                console.log("entered zone");
                 WA.nav.goToRoom(targetRoom);
             })
         })
 
         //@region: Tests
         WA.ui.actionBar.addButton({
-            id: 'button_1',
+            id: 'button:vertretungsplan',
             label: 'Vertretungsplan',
-            callback: (event) => {
-                console.log(event);
-
+            callback: () => {
+                WA.ui.modal.openModal({
+                    title: "Vertretungsplan",
+                    src: 'https://lmg-anrath.de/aktuelle_plaene/Vertretungsplan/heute/',
+                    allow: "fullscreen",
+                    allowApi: true,
+                    position: "right",
+                })
+            }
+        })
+        
+        WA.ui.actionBar.addButton({
+            id: 'button:mikaplan',
+            label: 'EVA Plan (Individuell)',
+            callback: () => {
                 WA.ui.modal.openModal({
                     title: "Vertretungsplan",
                     src: 'https://bot.mikaco.de/',
@@ -48,8 +53,7 @@ export function Global() {
         })
         
         WA.ui.actionBar.addButton({
-            id: 'map-button',
-            // @ts-ignore
+            id: 'button:map',
             type: 'action',
             imageSrc: 'https://www.workadventure-lmg.de/map.svg',
             toolTip: 'Öffne die Karte',
@@ -68,6 +72,18 @@ export function Global() {
             }
         })
     }).catch(e => console.error(e))
+}
+
+export function RegiterZone(Zone: Zone) {
+    if (!Zone) {
+        return console.error("Keine Config gefunden! Zone:", Zone)
+    }
+
+    Object.entries(Zone).forEach(([zone, targetRoom]) => {
+        WA.room.area.onEnter(zone).subscribe(() => {
+            WA.nav.goToRoom(`/_/global/${Config.Env ? "test" : "maps"}.workadventure-lmg.de/maps/` + targetRoom);
+        })
+    })
 }
 
 Global();

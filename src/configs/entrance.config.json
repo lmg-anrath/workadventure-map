@@ -1,8 +1,8 @@
 {
     "Zones": {
         "doors": {
-            "eg_entrance_door_forum": "/_/global/maps.workadventure-lmg.de/maps/forum.tmj#entranceDoor",
-            "eg_entrance_door_secretariat": "/_/global/maps.workadventure-lmg.de/maps/secretariat.tmj"
+            "eg_entrance_door_forum": "forum.tmj#entranceDoor",
+            "eg_entrance_door_secretariat": "secretariat.tmj"
         },
 		"ressources": {
             "eg_entrance_action_monitor": "https://lmg-anrath.de/aktuelle_plaene/Vertretungsplan/heute/subst_001.htm",

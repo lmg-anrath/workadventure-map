@@ -6,7 +6,7 @@
             "if1_pdf_if_overview": "https://maps.workadventure-lmg.de/ressources/Informatik-Unterricht_am_LMG.pdf"
         },
         "doors": {
-            "door_sek2": "/_/global/maps.workadventure-lmg.de/maps/sek2_eg.tmj#if1Door"
+            "door_sek2": "sek2_eg.tmj#if1Door"
         }
     }
 }
