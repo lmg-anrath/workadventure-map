@@ -81,7 +81,8 @@ export function RegiterZone(Zone: Zone) {
 
     Object.entries(Zone).forEach(([zone, targetRoom]) => {
         WA.room.area.onEnter(zone).subscribe(() => {
-            WA.nav.goToRoom(`/_/global/${Config.dev ? "test" : "maps"}.workadventure-lmg.de/maps/` + targetRoom);
+            console.log(`/_/global/${Config.dev ? "test" : "maps"}.workadventure-lmg.de/maps/${targetRoom}`)
+            WA.nav.goToRoom(`/_/global/${Config.dev ? "test" : "maps"}.workadventure-lmg.de/maps/${targetRoom}`);
         })
     })
 }
