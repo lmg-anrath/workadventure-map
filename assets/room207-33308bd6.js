@@ -1,0 +1,1 @@
+import{G as e,R as n}from"./main-14e8db03.js";const o={doors:{eg_room207_door_sek1:"sek1_eg.tmj#room207Door"}},r={Zones:o},t=Object.freeze(Object.defineProperty({__proto__:null,Zones:o,default:r},Symbol.toStringTag,{value:"Module"}));WA.onInit().then(async()=>{if(e(),!t){console.log("[ERROR] : Config not found.");return}n(o.doors)});console.log("room207.ts is running");
