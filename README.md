@@ -1,55 +1,48 @@
-# WorkAdventure Map Starter Kit
+# WorkAdventure LMG Map Repo
 
-![map](./map.png)
+[WorkAdventure Karten README]('./WORKADVENTURE.md')
 
-This is a starter kit to help you build your own map for [WorkAdventure](https://workadventu.re).
+Dieses Repository beinhält alle Dateien, die von WorkAdventure benötigt werden um unsere Karten anzuzeigen.
 
-To understand how to use this starter kit, follow the tutorial at [https://workadventu.re/map-building](https://workadventu.re/map-building).
-
-## Structure
-* *public*: Static files like PDFs or audio files
-* *src*: Scripts files
-* *tilesets*: All tilesets
-* *map.tmj*: Map file
-* *map.png*: The map thumbnail displayed on the in-game map information
-
-If you want to use more than one map file, just add the new map file on root or in a folder.
-
-we recommend using 500x500 images for the map thumbnails.
-
-If you are going to create custom websites to embed in the map, please reference the HTML files in the `input` option in *vite.config.js*.
-
-## Requirements
-
-Node.js version >=16
-
-## Installation
-
-With npm installed (comes with [node](https://nodejs.org/en/)), run the following commands into a terminal in the root directory of this project:
-
-```shell
-npm install
-npm run dev
+## Namenskonventionen
+Für unsere Karten nutzen wir folgende Namenskonventionen:
+```
+bereich_geschoss_raumid.(dateiendung)
+```
+#### bereich
+Bereich der Schule, in der sich die Map befindet
+```
+sek1 //Sekundarstufe 1 (Räume mit 2** und 3**)
+sek2 //Sekundarstufe 2 (Räume mit 1**)
 ```
 
-## Test production map
-
-You can test the optimized map as it will be in production:
-```sh
-npm run build
-npm run prod
+#### geschoss
+Geschoss der Schule, wo die Map ist
+```
+ug //Untergeschoss (Keller)
+eg //Erdgeschoss
+og //Obergeschoss
+og2 //Obergeschoss 2 (Musikräume)
 ```
 
-## Licenses
+#### raumid
+Identifikationsnummer des Raumes, zum Beispiel
+```
+if1 //Informatikraum 1
+phy2 //Physikraum 2
+103 //Raum 103
+```
 
-This project contains multiple licenses as follows:
+#### Beispiel
+```
+sek1_og_if2.tmj
+```
+für IF2 im Obergeschoss von Sek1
 
-* [Code license](./LICENSE.code) *(all files except those for other licenses)*
-* [Map license](./LICENSE.map) *(`map.tmj` and the map visual as well)*
-* [Assets license](./LICENSE.assets) *(the files inside the `src/assets/` folder)*
+## Karten
+Karten sind unter /maps als .tmj-Datei gespeichert, was beim Exportieren/Speichern aus Tiled zu beachten ist. <br>
 
-### About third party assets
+Unter /src/config befindet sich die config-Datei für die Map, mit demselben Namen wie die Map. Diese beinhalten die Ein- und Ausgänge einer Map, sowie weitere interaktive Elemente. Die config-Datei ist im json-Format und der jeweilige Schlüssel ist der Name der Zone die betreten wird (in Tiled festgelegt) und der Wert davon die Karte, die betreten werden soll (mit Dateiendung). Mit einem `#` hinter der Map-Datei kann man eine bestimmte Zone auswählen, wo der Spieler ankommen soll. <br>
 
-If you add third party assets in your map, do not forget to:
-1. Credit the author and license with the "tilesetCopyright" property present in the properties of each tilesets in the `map.tmj` file
-2. Add the license text in LICENSE.assets
+Für jede Map gibt es ein eigenes Skript unter /src/rooms als ts-Datei. Der Name sollte dem der Map gleichen und als Map-Skript in Tiled festgelegt werden.
+
